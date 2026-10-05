@@ -2,9 +2,11 @@ import "../styles/Home.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 import Tutors from "../components/Tutors";
+import Partners from "../components/Partners";
 import { homeSection } from "../data/HomeSection";
 import { courseSection } from "../data/CourseSection";
-import { tutorsSection } from "../data/TutorsSection";
+import { tutorsSection, tutorsList } from "../data/TutorsSection";
+import { partnersSection, partnersList } from "../data/PartnersSection";
 import HTMLReactParser from "html-react-parser/lib/index";
 
 function Home() {
@@ -30,10 +32,20 @@ function Home() {
             <div className="kolom">
               {HTMLReactParser(tutorsSection.content)}
             </div>
-            <Tutors />
+            <Tutors tutorsList={tutorsList} />
           </div>
         </section>
         {/* Tutors */}
+        {/* Partner */}
+        <section id="partners">
+          <div className="tengah">
+            <div className="kolom">
+              {HTMLReactParser(partnersSection.content)}
+            </div>
+            <Partners partnersList={partnersList} />
+          </div>
+        </section>
+        {/* Partner */}
       </div>
       <Footer />
     </>

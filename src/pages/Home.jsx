@@ -1,14 +1,14 @@
 import "../styles/Home.css";
-import Navbar from "../components/navbar";
-import Footer from "../components/Footer";
-import Tutors from "../components/Tutors";
-import Partners from "../components/Partners";
-import Contact from "../components/Contact";
-import { homeSection } from "../data/HomeSection";
-import { courseSection } from "../data/CourseSection";
-import { tutorsSection, tutorsList } from "../data/TutorsSection";
-import { partnersSection, partnersList } from "../data/PartnersSection";
-import { contactSection } from "../data/ContactSection";
+import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
+import Tutors from "../components/Tutors.jsx";
+import Partners from "../components/Partners.jsx";
+import Contact from "../components/Contact.jsx";
+import { homeSection } from "../data/HomeSection.jsx";
+import { courseSection } from "../data/CourseSection.jsx";
+import { tutorsSection, tutorsList } from "../data/TutorsSection.jsx";
+import { partnersSection, partnersList } from "../data/PartnersSection.jsx";
+import { contactSection } from "../data/ContactSection.jsx";
 import HTMLReactParser from "html-react-parser/lib/index";
 
 function Home() {

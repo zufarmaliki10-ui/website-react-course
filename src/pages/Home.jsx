@@ -3,10 +3,12 @@ import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 import Tutors from "../components/Tutors";
 import Partners from "../components/Partners";
+import Contact from "../components/Contact";
 import { homeSection } from "../data/HomeSection";
 import { courseSection } from "../data/CourseSection";
 import { tutorsSection, tutorsList } from "../data/TutorsSection";
 import { partnersSection, partnersList } from "../data/PartnersSection";
+import { contactSection } from "../data/ContactSection";
 import HTMLReactParser from "html-react-parser/lib/index";
 
 function Home() {
@@ -46,6 +48,9 @@ function Home() {
           </div>
         </section>
         {/* Partner */}
+        {/* Contact */}
+        <Contact contactSection={contactSection} />
+        {/* Contact */}
       </div>
       <Footer />
     </>
